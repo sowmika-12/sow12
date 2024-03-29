@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import CustomButton from './components/function components/button';
+//  import ButtonComponent from './components/class-components/button';
+// import ButtonComponent from './class-components/button.js';
+// import ButtonComponent from '../ClassComponents/button';
+import ButtonComponent from './ClassComponents/button';
+import CustomImage from './components/function components/image';
+import ImageComponent from './ClassComponents/image';
+import ListSow from './ClassComponents/list';
+import Tables from './components/function components/tables';
+import Forms from './ClassComponents/form';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+        <CustomButton/>
+        <CustomButton/>
+        <CustomButton/>
+        <CustomButton/>
+        <ButtonComponent/>
+        <CustomImage/>
+        <ImageComponent/>
+        <ListSow/>
+        <Tables/>
+        <Forms/>
     </div>
   );
 }
 
 export default App;
+
